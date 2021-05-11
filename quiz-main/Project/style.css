@@ -1,0 +1,249 @@
+body {
+  font-family: sans-serif;
+  height: 100%;
+  color: #fff;
+  background: #0BAAD4;
+}
+
+.container {
+  text-align: center;
+}
+
+.button {
+  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-3 {
+  border: 2px solid #0BAAD4;
+  background-color: #0B94D4;
+  border-radius: 20px;
+  color: #fff;
+  transition: .3s;
+}
+
+.button-3:hover {
+  box-shadow: 8px 8px #99bdff;
+  transition: .3s;
+}
+
+.button-4 {
+  border: 2px solid #0BAAD4;
+  background-color: #0B94D4;
+  border-radius: 20px;
+  color: #fff;
+  transition: .3s;
+}
+
+.button-4:hover {
+  box-shadow: 8px 8px #FA7D7D;
+  transition: .3s;
+}
+
+/* the .button styling is to create the navigation links */
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+/* the styling above including .circle and .small up to ripple is to create the ripple motion which can be found on left side on some pages including login page */
+
+.shadows {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #000000;
+  color: white;
+  letter-spacing: -0.05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 70px;
+  transition: all 0.25s ease-out;
+}
+
+.shadows:hover {
+  text-shadow: -16px 6px 15px #000000;
+}
+
+/* the styling .shadows is for the Tech Test title found across the website */
+
+h1 {
+  margin: 0 0 50px;
+  font-weight: normal;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+h1:hover {
+  text-shadow: 1px 1px 0 #37cdf5, 2px 2px 0 #1fc7f3, 3px 3px 0 #0cbdec;
+  transform: translate(-3px, -3px);
+}
+
+h2 {
+  float: left;
+  width: 50%;
+  height: 44px;
+  margin: 30px 0;
+  line-height: 24px;
+  text-align: center;
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    width: 100%;
+  }
+}
+
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.effect-5 {
+  display: inline-block;
+  overflow: hidden;
+}
+.effect-5:before, .effect-5:after {
+  right: 0;
+  bottom: 0;
+  background: #0883a4;
+}
+.effect-5:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.effect-5:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.effect-5 > span {
+  display: block;
+  padding: 10px;
+}
+.effect-5 > span:before, .effect-5 > span:after {
+  left: 0;
+  top: 0;
+  background: #0883a4;
+}
+.effect-5 > span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+.effect-5 > span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover > span:before, .effect-5:hover > span:after {
+  transform: translate(0, 0);
+}
+
+/* the styling above from h1 to .effect-5 is for the dynamic links created on the links page
+
+
+References:
+
+Background
+Vaibhav Arora (N/A) Animated Ripples background (Version 1) [Source Code] https://codepen.io/vaibhavarora/pen/xmpxjp
+
+Buttons
+Magda (N/A) CSS button hover effects (Version 1) [Source Code] https://codepen.io/woolandcotton/pen/mBmLwq
+
+Header
+agathaco (N/A) Fancy text shadow (Version 1) [Source Code] https://codepen.io/agathaco/pen/KqVWEw
+
+Revision links
+Peiwen Lu (N/A) Link Hover Effects (version 1) [Source Code] https://codepen.io/P233/pen/EaGAl
+ */
